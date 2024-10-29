@@ -19,8 +19,10 @@
             <br>
         </div>
 
-        <div id="yolo">
-            <p v-show="ShouldShow" style="font-style: italic;">{{WordsToShow}}</p>
+        <div id="yolo" v-show="ShouldShow">
+            <p style="font-style: italic;">{{WordsToShow}}</p>
+            <br>
+            <p slot="font-family: Comic Sans MS">{{NumberOfWords}}</p>
         </div>
         
 

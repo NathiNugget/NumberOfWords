@@ -37,7 +37,12 @@ Vue.createApp({
                 return this.Words.toString();
             }
             return 'Empty'
-        }
+        },
+
+        NumberOfWords(){
+            const someSet = new Set(this.Words); 
+            return `Number of words: ` + someSet.size   
+        },
     },
     
 
